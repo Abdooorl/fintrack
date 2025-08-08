@@ -15,7 +15,6 @@ import { ArrowDown2, ArrowUp2 } from "iconsax-reactjs";
 import { formatCurrency } from "@/lib/utils";
 import { ArrowDown, ArrowUp, SearchIcon, XIcon } from "lucide-react";
 import { Input } from "../ui/input";
-import { div } from "motion/react-client";
 
 type SortDirection = "asc" | "desc" | null;
 type SortField = "date" | "remark" | "amount" | "currency" | "type" | null;
@@ -24,32 +23,26 @@ export default function TransactionTable() {
   const { isMobile } = useLayout();
   const { transactions, isFetchingTransactions } = useTransactionStore();
 
-  // Search and sort state
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortField, setSortField] = useState<SortField>("date");
+  const [sortField, setSortField] = useState<SortField>(null);
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
-  // Handle sort toggle
   const toggleSort = (field: SortField) => {
     if (sortField === field) {
-      // Toggle direction if already sorting by this field
       setSortDirection((prev) =>
         prev === "asc" ? "desc" : prev === "desc" ? null : "asc"
       );
-      // If direction becomes null, reset field too
+
       if (sortDirection === "desc") {
         setSortField(null);
       }
     } else {
-      // Set new field and direction
       setSortField(field);
       setSortDirection("asc");
     }
   };
 
-  // Filter and sort transactions
   const filteredAndSortedTransactions = useMemo(() => {
-    // First filter by search query
     let result = transactions.filter((transaction) => {
       const searchLower = searchQuery.toLowerCase();
       return (
@@ -75,12 +68,10 @@ export default function TransactionTable() {
             compareB = b.amount;
             break;
           default:
-            // String comparison for other fields
             compareA = a[sortField]?.toLowerCase() || "";
             compareB = b[sortField]?.toLowerCase() || "";
         }
 
-        // Compare based on direction
         if (sortDirection === "asc") {
           return compareA > compareB ? 1 : -1;
         } else {
@@ -92,7 +83,6 @@ export default function TransactionTable() {
     return result;
   }, [transactions, searchQuery, sortField, sortDirection]);
 
-  // Render sort indicator
   const SortIndicator = ({ field }: { field: SortField }) => {
     if (sortField !== field)
       return <ArrowDown2 size={16} color="#6D797C" variant="Bold" />;
@@ -104,14 +94,13 @@ export default function TransactionTable() {
     );
   };
 
-  // Mobile view - cards with search
   if (isMobile) {
     return (
       <div className="space-y-3 px-1 h-max min-h-[70vh]">
         <div className="flex flex-col gap-4 mb-[24px]">
           <h3 className="text-[18px] font-bold">Transactions</h3>
 
-          {/* Search bar for mobile */}
+     
           <div className="search-bar relative">
             <div className="flex items-center gap-[16px] relative">
               <div className="absolute p-[8px] ml-[3px] bg-[hsl(0,0%,96%)] rounded-full ">
@@ -127,7 +116,6 @@ export default function TransactionTable() {
             </div>
           </div>
 
-          {/* Sort button for mobile */}
           <div className="flex gap-2">
             <button
               onClick={() => toggleSort("date")}
@@ -168,21 +156,18 @@ export default function TransactionTable() {
     );
   }
 
-  if (isFetchingTransactions ) {
+  if (isFetchingTransactions) {
     return (
       <div className="flex flex-col gap-[32px]">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
             className="h-[20px] bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
-          >
-           
-          </div>
+          ></div>
         ))}
       </div>
     );
   }
-
 
   if (isFetchingTransactions && isMobile) {
     return (
@@ -197,7 +182,6 @@ export default function TransactionTable() {
     );
   }
 
-  // Desktop view - table with search and sorting
   return (
     <div className="table w-full">
       <div className="table w-full">
@@ -220,9 +204,6 @@ export default function TransactionTable() {
                 className="w-full max-w-[340px] p-2 h-[36px] pl-[32px] bg-white placeholder:text-gray-400 rounded-[20px] sm:text-[14px] sm:placeholder:text-[14px]"
               />
             </div>
-          </div>
-          <div className="filterDate">
-            {/* Additional filter controls could go here */}
           </div>
         </div>
       </div>
@@ -273,7 +254,8 @@ export default function TransactionTable() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {filteredAndSortedTransactions.length === 0 && !isFetchingTransactions ? (
+          {filteredAndSortedTransactions.length === 0 &&
+          !isFetchingTransactions ? (
             <TableRow>
               <TableCell colSpan={5} className="h-24 text-center">
                 No transactions match your search

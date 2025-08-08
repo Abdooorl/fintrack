@@ -228,6 +228,7 @@
     --color-blue-50: #eff6ff;
     --color-blue-200: #bedbff;
     --color-blue-600: #155dfc;
+    --color-blue-700: #1447e6;
     --color-blue-900: #1c398e;
     --color-purple-600: #9810fa;
     --color-gray-50: #f9fafb;
@@ -275,6 +276,7 @@
       --color-blue-50: color(display-p3 .941826 .963151 .995385);
       --color-blue-200: color(display-p3 .76688 .855207 .987483);
       --color-blue-600: color(display-p3 .174493 .358974 .950247);
+      --color-blue-700: color(display-p3 .1379 .274983 .867624);
       --color-blue-900: color(display-p3 .136395 .219428 .537145);
       --color-purple-600: color(display-p3 .546729 .130167 .94439);
       --color-gray-50: color(display-p3 .977213 .98084 .985102);
@@ -301,6 +303,7 @@
       --color-blue-50: lab(96.492% -1.14644 -5.11479);
       --color-blue-200: lab(86.15% -4.04379 -21.0797);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
+      --color-blue-700: lab(36.9089% 35.0961 -85.6872);
       --color-blue-900: lab(26.1542% 15.7545 -51.5504);
       --color-purple-600: lab(43.0295% 75.21 -86.5669);
       --color-gray-50: lab(98.2596% -.247031 -.706708);
@@ -795,6 +798,10 @@
     margin-inline: calc(var(--spacing) * -1);
   }
 
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
+
   .mx-\[2px\] {
     margin-left: 2px;
     margin-right: 2px;
@@ -807,6 +814,10 @@
   .my-\[2px\] {
     margin-top: 2px;
     margin-bottom: 2px;
+  }
+
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
   }
 
   .mt-4 {
@@ -1591,6 +1602,10 @@
     border-color: var(--color-gray-200);
   }
 
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
+
   .border-input {
     border-color: var(--input);
   }
@@ -1701,6 +1716,10 @@
 
   .bg-blue-50 {
     background-color: var(--color-blue-50);
+  }
+
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
   }
 
   .bg-blue-900 {
@@ -2451,6 +2470,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-blue-700:hover {
+      background-color: var(--color-blue-700);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-destructive\/90:hover {
       background-color: var(--destructive);
     }
@@ -2471,6 +2496,12 @@
   @media (hover: hover) {
     .hover\:bg-gray-200:hover {
       background-color: var(--color-gray-200);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-gray-300:hover {
+      background-color: var(--color-gray-300);
     }
   }
 
@@ -2842,6 +2873,12 @@
   @media (min-width: 40rem) {
     .sm\:w-\[280px\] {
       width: 280px;
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:w-auto {
+      width: auto;
     }
   }
 

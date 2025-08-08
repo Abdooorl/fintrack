@@ -1588,6 +1588,102 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/src/components/ui/date-range-picker.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>DateRangePicker
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
+;
+;
+function DateRangePicker(param) {
+    let { startDate, endDate, onDateChange } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "date-range-picker",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-[18px] sm:text-[20px] text-[#1B2528] font-bold mb-4",
+                children: "Select Date Range"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-gray-600 text-sm",
+                children: "Choose a date range to filter your data."
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "date",
+                        className: "border border-gray-300 rounded-md p-2 w-full sm:w-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "mx-2 text-gray-500",
+                        children: "to"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "date",
+                        className: "border border-gray-300 rounded-md p-2 w-full sm:w-auto"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                className: "mt-4 bg-blue-600 text-white hover:bg-blue-700",
+                children: "Apply"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                lineNumber: 33,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                className: "mt-2 bg-gray-200 text-gray-800 hover:bg-gray-300",
+                children: "Reset"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/date-range-picker.tsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/date-range-picker.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_c = DateRangePicker;
+var _c;
+__turbopack_context__.k.register(_c, "DateRangePicker");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/src/components/custom/transaction-table.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1608,9 +1704,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up.js [app-client] (ecmascript) <export default as ArrowUp>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as SearchIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/input.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$date$2d$range$2d$picker$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/date-range-picker.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -1625,8 +1723,29 @@ function TransactionTable() {
     const { isMobile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useLayout$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayout"])();
     const { transactions, isFetchingTransactions } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionStore"])();
     const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [sortField, setSortField] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [sortField, setSortField] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("date");
     const [sortDirection, setSortDirection] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("desc");
+    const [filter, setFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        startDate: new Date(new Date().setMonth(new Date().getMonth() - 1)),
+        endDate: new Date()
+    });
+    const handleDateChange = (startDate, endDate)=>{
+        setFilter({
+            startDate,
+            endDate
+        });
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "TransactionTable.useEffect": ()=>{
+            setFilter({
+                "TransactionTable.useEffect": (prev)=>({
+                        ...prev,
+                        startDate: new Date(new Date().setMonth(new Date().getMonth() - 1)),
+                        endDate: new Date()
+                    })
+            }["TransactionTable.useEffect"]);
+        }
+    }["TransactionTable.useEffect"], []);
     const toggleSort = (field)=>{
         if (sortField === field) {
             setSortDirection((prev)=>prev === "asc" ? "desc" : prev === "desc" ? null : "asc");
@@ -1690,7 +1809,7 @@ function TransactionTable() {
             variant: "Bold"
         }, void 0, false, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 88,
+            lineNumber: 107,
             columnNumber: 14
         }, this);
         return sortDirection === "asc" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__["ArrowDown"], {
@@ -1698,14 +1817,14 @@ function TransactionTable() {
             color: "#087A2E"
         }, void 0, false, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 91,
+            lineNumber: 110,
             columnNumber: 7
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
             size: 16,
             color: "#087A2E"
         }, void 0, false, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 93,
+            lineNumber: 112,
             columnNumber: 7
         }, this);
     };
@@ -1721,7 +1840,7 @@ function TransactionTable() {
                             children: "Transactions"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 101,
+                            lineNumber: 120,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1736,12 +1855,12 @@ function TransactionTable() {
                                             className: " text-gray-500  "
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1752,18 +1871,18 @@ function TransactionTable() {
                                         className: "w-full p-2  h-[40px]  pl-[48px]   placeholder:text-gray-400 rounded-[20px]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 128,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                lineNumber: 105,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 104,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1778,13 +1897,13 @@ function TransactionTable() {
                                             field: "date"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 147,
                                             columnNumber: 20
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1796,25 +1915,25 @@ function TransactionTable() {
                                             field: "amount"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 157,
                                             columnNumber: 22
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 119,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                    lineNumber: 100,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, this),
                 filteredAndSortedTransactions.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1822,7 +1941,7 @@ function TransactionTable() {
                     children: "No transactions match your search"
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                    lineNumber: 144,
+                    lineNumber: 163,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex-col flex gap-[18px] mt-[32px]",
@@ -1832,19 +1951,19 @@ function TransactionTable() {
                                 data: item
                             }, item.id, false, {
                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                lineNumber: 151,
+                                lineNumber: 170,
                                 columnNumber: 15
                             }, this))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                    lineNumber: 148,
+                    lineNumber: 167,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 99,
+            lineNumber: 118,
             columnNumber: 7
         }, this);
     }
@@ -1857,12 +1976,12 @@ function TransactionTable() {
                     className: "h-[20px] bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
                 }, i, false, {
                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                    lineNumber: 163,
+                    lineNumber: 182,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 161,
+            lineNumber: 180,
             columnNumber: 7
         }, this);
     }
@@ -1875,12 +1994,12 @@ function TransactionTable() {
                     className: "h-[20px] bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
                 }, i, false, {
                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                    lineNumber: 176,
+                    lineNumber: 195,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/custom/transaction-table.tsx",
-            lineNumber: 174,
+            lineNumber: 193,
             columnNumber: 7
         }, this);
     }
@@ -1897,67 +2016,85 @@ function TransactionTable() {
                             children: "Transactions"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 189,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                        lineNumber: 188,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "filter-section w-full mb-[4px]",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "search-bar max-w-[600px]",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-[16px] relative",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute w-[28px] h-[28px] flex items-center justify-center ml-[3px] bg-[hsl(0,0%,96%)] rounded-full",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchIcon$3e$__["SearchIcon"], {
-                                            size: 14,
-                                            className: "text-gray-500"
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "search-bar max-w-[600px]",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-[16px] relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute w-[28px] h-[28px] flex items-center justify-center ml-[3px] bg-[hsl(0,0%,96%)] rounded-full",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchIcon$3e$__["SearchIcon"], {
+                                                size: 14,
+                                                className: "text-gray-500"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/custom/transaction-table.tsx",
+                                                lineNumber: 216,
+                                                columnNumber: 17
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                            lineNumber: 197,
-                                            columnNumber: 17
+                                            lineNumber: 215,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                            type: "text",
+                                            value: searchQuery,
+                                            onChange: (e)=>setSearchQuery(e.target.value),
+                                            placeholder: "Search transactions",
+                                            className: "w-full max-w-[340px] p-2 h-[36px] pl-[32px] bg-white placeholder:text-gray-400 rounded-[20px] sm:text-[14px] sm:placeholder:text-[14px]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/custom/transaction-table.tsx",
+                                            lineNumber: 218,
+                                            columnNumber: 15
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 196,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                        type: "text",
-                                        value: searchQuery,
-                                        onChange: (e)=>setSearchQuery(e.target.value),
-                                        placeholder: "Search transactions",
-                                        className: "w-full max-w-[340px] p-2 h-[36px] pl-[32px] bg-white placeholder:text-gray-400 rounded-[20px] sm:text-[14px] sm:placeholder:text-[14px]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 199,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/custom/transaction-table.tsx",
+                                    lineNumber: 214,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                lineNumber: 195,
-                                columnNumber: 13
+                                lineNumber: 213,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "filterDate",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$date$2d$range$2d$picker$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    startDate: filter.startDate.toISOString().split("T")[0],
+                                    endDate: filter.endDate.toISOString().split("T")[0],
+                                    onDateChange: handleDateChange
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/custom/transaction-table.tsx",
+                                    lineNumber: 228,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/custom/transaction-table.tsx",
+                                lineNumber: 227,
+                                columnNumber: 11
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 194,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                        lineNumber: 193,
+                        lineNumber: 212,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                lineNumber: 187,
+                lineNumber: 206,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
@@ -1977,18 +2114,18 @@ function TransactionTable() {
                                                 field: "date"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 245,
                                                 columnNumber: 22
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 244,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 240,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -2002,18 +2139,18 @@ function TransactionTable() {
                                                 field: "remark"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                lineNumber: 227,
+                                                lineNumber: 253,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 226,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 222,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -2027,18 +2164,18 @@ function TransactionTable() {
                                                 field: "amount"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                lineNumber: 235,
+                                                lineNumber: 261,
                                                 columnNumber: 24
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 260,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 230,
+                                    lineNumber: 256,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -2052,18 +2189,18 @@ function TransactionTable() {
                                                 field: "currency"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                lineNumber: 243,
+                                                lineNumber: 269,
                                                 columnNumber: 26
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 242,
+                                        lineNumber: 268,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 238,
+                                    lineNumber: 264,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -2077,29 +2214,29 @@ function TransactionTable() {
                                                 field: "type"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                lineNumber: 251,
+                                                lineNumber: 277,
                                                 columnNumber: 22
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 250,
+                                        lineNumber: 276,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                    lineNumber: 246,
+                                    lineNumber: 272,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 213,
+                            lineNumber: 239,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                        lineNumber: 212,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
@@ -2110,12 +2247,12 @@ function TransactionTable() {
                                 children: "No transactions match your search"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                lineNumber: 260,
+                                lineNumber: 286,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                            lineNumber: 259,
+                            lineNumber: 285,
                             columnNumber: 13
                         }, this) : filteredAndSortedTransactions.map((transaction)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
                                 children: [
@@ -2124,7 +2261,7 @@ function TransactionTable() {
                                         children: transaction.date
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 293,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -2132,7 +2269,7 @@ function TransactionTable() {
                                         children: transaction.remark
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 270,
+                                        lineNumber: 296,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -2140,7 +2277,7 @@ function TransactionTable() {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCurrency"])(transaction.amount, transaction.currency)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 273,
+                                        lineNumber: 299,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -2148,7 +2285,7 @@ function TransactionTable() {
                                         children: transaction.currency
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 276,
+                                        lineNumber: 302,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -2160,7 +2297,7 @@ function TransactionTable() {
                                                     className: "".concat(transaction.type === "Credit" ? "bg-[#087A2E]" : "bg-[#C6381B]", " rounded-full w-[9px] h-[9px] inline-block")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                    lineNumber: 281,
+                                                    lineNumber: 307,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2168,45 +2305,45 @@ function TransactionTable() {
                                                     children: transaction.type
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                                    lineNumber: 288,
+                                                    lineNumber: 314,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                            lineNumber: 280,
+                                            lineNumber: 306,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                        lineNumber: 279,
+                                        lineNumber: 305,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, transaction.id, true, {
                                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                                lineNumber: 266,
+                                lineNumber: 292,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/transaction-table.tsx",
-                        lineNumber: 256,
+                        lineNumber: 282,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/transaction-table.tsx",
-                lineNumber: 211,
+                lineNumber: 237,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/custom/transaction-table.tsx",
-        lineNumber: 186,
+        lineNumber: 205,
         columnNumber: 5
     }, this);
 }
-_s(TransactionTable, "PKs61jMR3f83gMuBZEhL3PIQOig=", false, function() {
+_s(TransactionTable, "1VXKV3i0D+IK+Hfr1GrVGJh5a/8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useLayout$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayout"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransactionStore"]
@@ -2552,4 +2689,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=_ef618a03._.js.map
+//# sourceMappingURL=_e88072fc._.js.map
