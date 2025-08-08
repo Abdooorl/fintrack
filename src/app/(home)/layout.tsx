@@ -18,7 +18,7 @@ export default function DashboardLayout({
       </div>
 
       <div
-        className="flex flex-row mb-[50px] mt-16 h-[calc(100vh-64px)] overflow-hidden"
+        className="flex flex-row  mt-16 h-[calc(100vh-64px)] overflow-hidden"
         style={{
           scrollbarWidth: "none",
         }}
