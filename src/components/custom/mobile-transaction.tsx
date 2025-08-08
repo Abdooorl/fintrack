@@ -3,23 +3,21 @@
 import { TransactionInterface } from "@/utils/store";
 import { MoneyRecive, MoneySend } from "iconsax-reactjs";
 import { formatCurrency } from "@/lib/utils";
-import { Currency } from "lucide-react";
-import { text } from "stream/consumers";
 
-// Transaction Card Component for Mobile
+
 export default function MobileTransactionCard(props: {
   data: TransactionInterface;
 }) {
   return (
-    <div className="mobile-view-card border-[0.5px] border-[#EBEBEB] px-[16px] py-[14px] rounded-[20px] bg-white">
+    <div className="mobile-view-card border-[1px] border-[#EBEBEB] px-[16px] py-[14px] rounded-[20px] bg-[hsl(0,0%,98%)]">
       <div className="tb  flex flex-col gap-[14px]">
         <div className="currency-type flex  flex-row gap-[12px]">
-          <div className="type px-[10px] h-[24px]  border-[0.5px] border-[#EBEBEB] rounded-full flex items-center justify-center w-max bg-[#F5F5F5]">
+          <div className="type px-[10px] h-[24px]  border-[0.5px] border-[#EBEBEB] rounded-full flex items-center justify-center w-max bg-[hsl(0,0%,94%)]">
             <p className="usd text-[12px] font-medium text-[#909090] leading-0">
               {props.data.currency}
             </p>
           </div>
-          <div className="type px-[10px] h-[24px] border-[0.5px]  border-[#EBEBEB] rounded-full flex items-center gap-[4px] w-max bg-[#F5F5F5]">
+          <div className="type px-[10px] h-[24px] border-[0.5px]  border-[#EBEBEB] rounded-full flex items-center gap-[4px] w-max bg-[hsl(0,0%,94%)]">
             <div
               className={` ${
                 props.data.type === "Credit" ? "bg-[#087A2E]" : "bg-[#C6381B]"
@@ -45,8 +43,8 @@ export default function MobileTransactionCard(props: {
                 <MoneySend size={24} color={"#C6381B"} variant="Bold" />
               )}
             </div>
-            <div className="remarks flex flex-col items-start gap-[6px]">
-              <p className="text text-[15px] leading-[100%]">
+            <div className="remarks flex flex-col items-start gap-[8px]">
+              <p className="text text-[15px] font-medium leading-[100%]">
                 {props.data.remark}
               </p>
               <p className="text text-[12px] text-[#909090] leading-[100%]">

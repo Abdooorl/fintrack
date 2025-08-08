@@ -1,13 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import MetricCard from "./metric-card";
 import { useDashboardStore } from "@/utils/store";
 
 export default function SummaryCard() {
   const { dashboardSummary, isFetchingDashboard } = useDashboardStore();
-
-
 
   if (isFetchingDashboard) {
     return (
@@ -129,7 +125,7 @@ export default function SummaryCard() {
       )}
 
       {/* Empty State */}
-      {dashboardSummary === undefined  && (
+      {dashboardSummary === undefined && (
         <div className="flex items-center justify-center h-full">
           <p className="text-gray-500">No summary data available</p>
         </div>

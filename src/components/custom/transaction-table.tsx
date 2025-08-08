@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import {
   Table,
   TableBody,
@@ -11,10 +11,12 @@ import {
 import { useLayout } from "@/hooks/useLayout";
 import { useTransactionStore } from "@/utils/store";
 import MobileTransactionCard from "./mobile-transaction";
-import { ArrowDown2, ArrowUp2 } from "iconsax-reactjs";
+import { ArrowDown2 } from "iconsax-reactjs";
 import { formatCurrency } from "@/lib/utils";
 import { ArrowDown, ArrowUp, SearchIcon, XIcon } from "lucide-react";
 import { Input } from "../ui/input";
+import Image from "next/image";
+import NotFound from "../../../public/NoFound.png";
 
 type SortDirection = "asc" | "desc" | null;
 type SortField = "date" | "remark" | "amount" | "currency" | "type" | null;
@@ -100,7 +102,6 @@ export default function TransactionTable() {
         <div className="flex flex-col gap-4 mb-[24px]">
           <h3 className="text-[18px] font-bold">Transactions</h3>
 
-     
           <div className="search-bar relative">
             <div className="flex items-center gap-[16px] relative">
               <div className="absolute p-[8px] ml-[3px] bg-[hsl(0,0%,96%)] rounded-full ">
@@ -121,7 +122,7 @@ export default function TransactionTable() {
               onClick={() => toggleSort("date")}
               className={`text-[14px] px-[16px] py-1 rounded-full h-[36px] border flex items-center gap-1 ${
                 sortField === "date"
-                  ? "bg-[#E2EDF1] border-[#00445b]"
+                  ? "bg-[#E2EDF1] border-[#b3d1db]"
                   : "bg-gray-50"
               }`}
             >
@@ -131,7 +132,7 @@ export default function TransactionTable() {
               onClick={() => toggleSort("amount")}
               className={`text-[14px] px-[16px] py-1 rounded-full h-[36px] border flex items-center gap-1 ${
                 sortField === "amount"
-                  ? "bg-[#E2EDF1] border-[#00445b]"
+                  ? "bg-[#E2EDF1] border-[#b3d1db]"
                   : "bg-gray-50"
               }`}
             >
@@ -141,8 +142,16 @@ export default function TransactionTable() {
         </div>
 
         {filteredAndSortedTransactions.length === 0 ? (
-          <div className="py-8 text-center text-gray-500">
-            No transactions match your search
+          <div className="flex flex-col items-center gap-4">
+            <Image
+              src={NotFound}
+              alt="No Search Found"
+              className="w-[150px] "
+            />
+            <div className="flex flex-col items-center gap-[2px] text-center">
+              <p className="text-gray-700 text-[15px]">No Transaction Found</p>
+              <p className="text-gray-500 text-[14px]">Adjust your filter</p>
+            </div>
           </div>
         ) : (
           <div className="flex-col flex gap-[18px] mt-[32px]">
@@ -257,8 +266,25 @@ export default function TransactionTable() {
           {filteredAndSortedTransactions.length === 0 &&
           !isFetchingTransactions ? (
             <TableRow>
-              <TableCell colSpan={5} className="h-24 text-center">
-                No transactions match your search
+              <TableCell
+                colSpan={5}
+                className="text-center bg-white hover:bg-white"
+              >
+                <div className="flex flex-col items-center gap-4">
+                  <Image
+                    src={NotFound}
+                    alt="No Search Found"
+                    className="w-[150px] "
+                  />
+                  <div className="flex flex-col items-center gap-[2px] text-center">
+                    <p className="text-gray-700 text-[15px]">
+                      No Transaction Found
+                    </p>
+                    <p className="text-gray-500 text-[14px]">
+                      Adjust your filter
+                    </p>
+                  </div>
+                </div>
               </TableCell>
             </TableRow>
           ) : (

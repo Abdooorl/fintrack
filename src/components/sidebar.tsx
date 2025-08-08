@@ -56,6 +56,9 @@ export default function SideBar({
           ${!isMobile && !isVisible ? "w-0 p-0" : "w-[300px]"}
           h-full bg-white transition-all  pt-[28px]  duration-300 overflow-y-hidden
         `}
+        style={{
+          scrollbarWidth: "none",
+        }}
         aria-hidden={!isVisible}
       >
         <div className="">

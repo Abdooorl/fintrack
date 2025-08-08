@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SummarySection from "./summary";
 import TransactionTable from "./custom/transaction-table";
@@ -63,12 +63,12 @@ export default function TabSwitch() {
           className="content"
         >
           {activeTab === "Overview" ? (
-            <div className="tab-content mt-[24px] flex-col flex gap-[28px] sm:mt-[28px]">
+            <div className="tab-content mt-[24px] mb-[40px] sm:mb-[20px] flex-col flex gap-[28px] sm:mt-[28px]">
               <SummarySection />
               <TransactionTable />
             </div>
           ) : (
-            <div className="tab-content mt-[24px] sm:mt-[28px]">
+            <div className="tab-content mt-[24px] mb-[40px] sm:mb-[20px] sm:mt-[28px]">
               <TransactionTable />
             </div>
           )}

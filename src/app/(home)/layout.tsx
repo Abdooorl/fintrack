@@ -17,30 +17,26 @@ export default function DashboardLayout({
         <Header onMenuClick={toggleSidebar} />
       </div>
 
-      <div className="flex flex-row mt-16 h-[calc(100vh-64px)] overflow-hidden">
-        {/* Sidebar container with fixed position for both mobile and desktop */}
-        {/* For mobile, we don't render in normal flow, but use fixed positioning via the SideBar component */}
-        {!isMobile && (
-          <div className="sidebar h-full">
-            <SideBar
-              isMobile={false}
-              isVisible={sideBarVisible}
-              onBackDropClick={closeSidebar}
-            />
-          </div>
-        )}
-
-        {/* Fixed mobile sidebar outside normal document flow */}
-        {isMobile && (
+      <div
+        className="flex flex-row mb-[50px] mt-16 h-[calc(100vh-64px)] overflow-hidden"
+        style={{
+          scrollbarWidth: "none",
+        }}
+      >
+        <div className={`sidebar ${!isMobile ? "h-full" : ""}`}>
           <SideBar
-            isMobile={true}
+            isMobile={isMobile}
             isVisible={sideBarVisible}
             onBackDropClick={closeSidebar}
           />
-        )}
+        </div>
 
-        {/* Main content with its own scrolling context */}
-        <div className="main-content flex-1 overflow-y-auto">
+        <div
+          className="main-content flex-1 overflow-y-auto "
+          style={{
+            scrollbarWidth: "none",
+          }}
+        >
           <MainContainter>{children}</MainContainter>
         </div>
       </div>

@@ -1,8 +1,8 @@
 "use client";
 
 import { ArrowDown2 } from "iconsax-reactjs";
-import { ArrowDown, Check, Ellipsis, MoveVertical } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { Check, Ellipsis } from "lucide-react";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,10 +15,13 @@ import PartneThree from "../../public/Partner-3.png";
 import PartneFour from "../../public/Partner-4.png";
 import Image, { StaticImageData } from "next/image";
 import { Button } from "./ui/button";
+import {
+  ArrowDownOnSquareIcon,
+  ArrowUpOnSquareIcon,
+  FolderArrowDownIcon,
+} from "@heroicons/react/16/solid";
 
 export default function WidgetLedger() {
-  const [flipIcon, setFlipIcon] = useState<boolean>(false);
-
   const partnerImage: StaticImageData[] = [
     PartnerOne,
     PartnerTwo,
@@ -33,11 +36,8 @@ export default function WidgetLedger() {
           <div className="active-widget flex flex-row items-center gap-[8px]">
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <div
-                  onClick={() => setFlipIcon(true)}
-                  className="widgetLedger cursor-pointer flex flex-row items-center gap-[8px] sm:gap-[12px]"
-                >
-                  <h2 className="text-[32px] leading-0 sm:text-[34px] text-[#1B2528] font-bold">
+                <div className="widgetLedger cursor-pointer flex flex-row items-center gap-[8px] sm:gap-[12px]">
+                  <h2 className="text-[30px] leading-[120%] sm:leading-0  sm:text-[34px] text-[#1B2528] font-bold">
                     Widget Ledger
                   </h2>
                   <ArrowDown2
@@ -77,7 +77,7 @@ export default function WidgetLedger() {
                   alt="avatars"
                   key={idx}
                   priority
-                  className="w-[36px] border-[1.5px] hover:scale-110 transition-transform duration-300 cursor-pointer rounded-full border-white sm:w-[32px] shadow-[0px_1.456px_4.221px_0px_rgba(0,0,0,0.25)] object-cover "
+                  className="w-[36px] border-[1.5px] hover:scale-110 transition-transform duration-300 cursor-pointer rounded-full border-white sm:w-[32px] sm:shadow-[0px_1.456px_4.221px_0px_rgba(0,0,0,0.25)] object-cover "
                 />
               ))}
             </div>
@@ -96,9 +96,31 @@ export default function WidgetLedger() {
           >
             Share
           </Button>
-          <div className="menu h-[40px] cursor-pointer border-1 w-[40px] sm:w-[32px] sm:h-[32px] hover:bg-gray-50 text-[#1B2528] flex items-center justify-center active:scale-x-98 border-[#BBC7C9] rounded-full">
-            <Ellipsis size={20} />
-          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <div className="menu h-[40px] cursor-pointer border-1 w-[40px] sm:w-[32px] sm:h-[32px] hover:bg-gray-50 text-[#1B2528] flex items-center justify-center active:scale-x-98 border-[#BBC7C9] rounded-full">
+                <Ellipsis size={20} />
+              </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="w-[240px] sm:w-[180px] rounded-[16px]"
+              align="end"
+              side="bottom"
+            >
+              <DropdownMenuItem className=" text-[15px] h-[40px] sm:h-max sm:text-[14px] cursor-pointer  rounded-[8px] font-medium text-gray-600">
+                <ArrowUpOnSquareIcon color="#1B2528" />
+                Import Report
+              </DropdownMenuItem>
+              <DropdownMenuItem className="text-[15px] h-[40px] sm:h-max sm:text-[14px]  rounded-[8px] cursor-pointer font-medium text-gray-600">
+                <FolderArrowDownIcon color="#1B2528" />
+                Get Statement
+              </DropdownMenuItem>
+              <DropdownMenuItem className="text-[15px] h-[40px] sm:h-max sm:text-[14px]  rounded-[8px] cursor-pointer font-medium text-gray-600">
+                <ArrowDownOnSquareIcon color="#1B2528" />
+                Download Report
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </div>

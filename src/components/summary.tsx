@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import SummaryCard from "./custom/summary-card";
 
 export default function SummarySection() {

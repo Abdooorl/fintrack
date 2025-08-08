@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import {} from "@heroicons/react/16/solid";
+import { ArrowLeftStartOnRectangleIcon,  BellIcon,  UserIcon } from "@heroicons/react/16/solid";
 import Logo from "../../public/Logo.svg";
 import Avatar from "../../public/Avatar.png";
 import Image from "next/image";
@@ -10,7 +10,14 @@ import SearchSheet from "./custom/search-sheet";
 import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { Grid, Grid2X2, LayoutGrid, Menu, SearchIcon } from "lucide-react";
+import {  LayoutGrid, Menu, SearchIcon,  } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator
+} from "@/components/ui/dropdown-menu";
 
 interface HeaderProps {
   onMenuClick: () => void;
@@ -47,14 +54,13 @@ export default function Header({ onMenuClick }: HeaderProps) {
 
   return (
     <div
-      className="header fixed top-0 w-full px-[16px] sm:px-[48px] py-[16px] sm:py-[16px] flex flex-row
+      className="header fixed top-0 w-full px-[16px] sm:px-[48px] border-b-1 border-[hsl(0,0%,90%)] py-[16px] sm:border-none sm:py-[16px] flex flex-row
      justify-between bg-white z-10"
     >
       <div className="menu-logo items-center flex flex-row gap-[8px] sm:gap-[28px]">
         <div className=" sm:py-[6px] sm:px-[8px] hover:bg-gray-50 cursor-pointer rounded-[8px] ">
           <Menu
             onClick={onMenuClick}
-            
             className="w-[32px] sm:w-[24px] cursor-pointer text-[#1B2528] hover:text-gray-600 active:scale-90 transition-all"
           />
         </div>
@@ -140,21 +146,48 @@ export default function Header({ onMenuClick }: HeaderProps) {
           </AnimatePresence>
         </div>
         <div className=" py-[6px] px-[8px] hover:bg-gray-50 cursor-pointer rounded-[8px] ">
-          <LayoutGrid className="w-[20px] h-[20px] cursor-pointer text-[#1B2528] hover:text-gray-600 active:scale-95 transition-all hidden sm:flex" />
+          <LayoutGrid className="w-[20px] h-[20px] cursor-pointer text-[#1B2528] hover:text-gray-600 active:scale-95  transition-all hidden sm:flex" />
         </div>
         <SearchIcon
           onClick={() => setOpenSheet(true)}
           className="w-[26px] h-[26px] cursor-pointer text-[#1B2528] hover:text-gray-600 active:scale-95 transition-all sm:hidden"
         />
         <LayoutGrid className="w-[26px] h-[26px] cursor-pointer text-[#1B2528] hover:text-gray-600 active:scale-95 transition-all  sm:hidden" />
-        <div className="profile-avatar cursor-pointer border-2 sm:ml-[8px] border-gray-200 bg-contain rounded-[100px] overflow-hidden">
-          <Image
-            src={Avatar}
-            alt="User Avatar"
-            className=" w-[28px] sm:w-[36px]"
-            priority
-          />
-        </div>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <div className="profile-avatar cursor-pointer border-2 sm:ml-[8px] border-gray-200 bg-contain rounded-[100px] overflow-hidden">
+              <Image
+                src={Avatar}
+                alt="User Avatar"
+                className=" w-[28px] sm:w-[36px]"
+                priority
+              />
+            </div>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            className="w-[240px] sm:w-[180px] rounded-[16px]"
+            align="end"
+            side="bottom"
+          >
+            <DropdownMenuItem className=" text-[15px] h-[40px] sm:h-max sm:text-[14px] cursor-pointer active:scale-98  rounded-[8px] font-medium text-gray-600">
+              <UserIcon color="#1B2528" />
+              Profile
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-[15px] h-[40px] sm:h-max sm:text-[14px]  rounded-[8px] active:scale-98  cursor-pointer font-medium text-gray-600">
+              <BellIcon color="#1B2528" />
+              Notifications
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem
+              className="text-[15px] h-[40px] sm:h-max sm:text-[14px]  rounded-[8px] cursor-pointer active:scale-98 font-medium text-gray-600"
+              variant="destructive"
+            >
+              <ArrowLeftStartOnRectangleIcon color="#1B2528" />
+              Sign out
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <SearchSheet
         isOpen={openSheet}

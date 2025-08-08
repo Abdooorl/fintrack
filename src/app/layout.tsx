@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Public_Sans } from "next/font/google";
+import {  Geist_Mono, Public_Sans } from "next/font/google";
 import "./globals.css";
 
 const publicSans = Public_Sans({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${publicSans.variable} font-sans antialiased`}
+        className={`${publicSans.variable} font-sans antialiased overflow-hidden`}
       >
         {children}
       </body>

@@ -1,27 +1,14 @@
 "use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { formatCurrency } from "@/lib/utils";
-import {
-  ArrowDownIcon,
-  ArrowUpIcon,
-  Check,
-  Ellipsis,
-  Minus,
-  MinusCircle,
-  Plus,
-} from "lucide-react";
+import { Ellipsis, Plus } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { EyeSlashIcon } from "@heroicons/react/24/solid";
-import { EyeDropperIcon } from "@heroicons/react/24/outline";
-import { Eye } from "iconsax-reactjs";
 import { DocumentTextIcon, EyeIcon } from "@heroicons/react/16/solid";
-import { DropdownMenuSeparator } from "@radix-ui/react-dropdown-menu";
 
 interface MetricCardProps {
   title: string;

@@ -1,11 +1,10 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useEffect } from "react";
 import WidgetLedger from "@/components/widget-ledger";
 import TabSwitch from "@/components/tab-switch";
 import {
   DashboardSummary,
   TransactionInterface,
-  TransactionStore,
   useTransactionStore,
 } from "@/utils/store";
 import { useDashboardStore } from "@/utils/store";
@@ -21,7 +20,7 @@ const dashboardAPIData: DashboardSummary = {
   transactionChange: 10,
 };
 
-// Sample transaction data
+
 const transactionData: TransactionInterface[] = [
   {
     id: "1",
@@ -119,15 +118,20 @@ export default function Dashboard() {
       setDashboardSummary(dashboardAPIData);
       setTransactions(transactionData);
       setFetchingDashboard(false);
-      setFetchingTransactions(false)
+      setFetchingTransactions(false);
     }, 1000);
 
     return () => {
       clearTimeout(timer);
       setFetchingDashboard(false);
-      setFetchingTransactions(false)
+      setFetchingTransactions(false);
     };
-  }, [setDashboardSummary, setFetchingDashboard, setFetchingTransactions, setTransactions]);
+  }, [
+    setDashboardSummary,
+    setFetchingDashboard,
+    setFetchingTransactions,
+    setTransactions,
+  ]);
 
   return (
     <div className="">
