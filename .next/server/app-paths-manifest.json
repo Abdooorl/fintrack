@@ -1,0 +1,7 @@
+{
+  "/(home)/dashboard/page": "app/(home)/dashboard/page.js",
+  "/(home)/reports/page": "app/(home)/reports/page.js",
+  "/(home)/settings/page": "app/(home)/settings/page.js",
+  "/(home)/transactions/page": "app/(home)/transactions/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/app/home/settings/page.tsx"],"sourcesContent":["\"use client\"\nexport default function Settings() {\n  return <div className=\"\"></div>;\n}\n"],"names":[],"mappings":";;;;AAAA;;AACe,SAAS;IACtB,qBAAO,6LAAC;QAAI,WAAU;;;;;;AACxB;KAFwB","debugId":null}}]
+}

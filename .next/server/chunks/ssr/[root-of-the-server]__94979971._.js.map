@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/app/page.tsx"],"sourcesContent":["import Link from \"next/link\";\n\nexport default function Home() {\n  return (\n    <div className=\"w-full min-h-screen flex items-center justify-center\">\n      <Link href=\"/dashboard\"> Go to Dashboard </Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,4JAAA,CAAA,UAAI;YAAC,MAAK;sBAAa;;;;;;;;;;;AAG9B","debugId":null}}]
+}

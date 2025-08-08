@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/app/home/dashboard/page.tsx"],"sourcesContent":["\"use client\";\n\nexport default function Dashboard() {\n  return (\n    <div className=\"\">\n      <p className=\"font-bold text-[34px]\">Badamosi Abdullahi</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAE,WAAU;sBAAwB;;;;;;;;;;;AAG3C","debugId":null}}]
+}
