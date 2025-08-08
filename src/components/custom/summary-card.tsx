@@ -11,15 +11,15 @@ export default function SummaryCard() {
         {[...Array(4)].map((_, i) => (
           <div
             key={i}
-            className="h-40 bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
+            className="h-40 bg-gray-200  p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
           >
             <div className="top flex flex-row items-center justify-between">
-              <p className="h-[16px] w-[90px] bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse"></p>
+              <p className="h-[16px] w-[90px] bg-gray-300 rounded-lg animate-pulse"></p>
               <div className="w-[28px] h-[28px] bg-gray-300 rounded-full flex items-center justify-center"></div>
             </div>
             <div className="balance flex flex-col gap-[8px]">
-              <p className="h-[30px] w-[90px] bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse"></p>
-              <div className="h-[12px] w-[20px] bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse"></div>
+              <p className="h-[30px] w-[90px] bg-gray-300 rounded-lg animate-pulse"></p>
+              <div className="h-[12px] w-[20px] bg-gray-300 rounded-lg animate-pulse"></div>
             </div>
           </div>
         ))}

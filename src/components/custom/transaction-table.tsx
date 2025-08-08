@@ -171,7 +171,7 @@ export default function TransactionTable() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="h-[20px] bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
+            className="h-[20px] bg-gray-200 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
           ></div>
         ))}
       </div>
@@ -184,7 +184,7 @@ export default function TransactionTable() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="h-[20px] bg-gray-200 dark:bg-gray-700 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
+            className="h-[20px] bg-gray-200 p-[20px] flex flex-col gap-[32px] rounded-[20px] animate-pulse"
           ></div>
         ))}
       </div>
