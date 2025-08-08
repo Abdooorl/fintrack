@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/components/widget-ledger.tsx"],"sourcesContent":["\"use client\"\n\nimport { ArrowDown } from \"lucide-react\";\nimport { useState, useRef, useEffect } from \"react\";\n\nexport default function WidgetLedger() {\n    return (\n      <div className=\"widget-layout\">\n        <div className=\"widgetLedger\">\n          <h2 className=\"text-[20px] text-[#1B2528] font-bold\">\n            Widget Ledger\n          </h2>\n          <ArrowDown2 size=\"32\" color=\"#FF8A65\" variant=\"Bold\" />\n        </div>\n      </div>\n    );\n}"],"names":[],"mappings":";;;;AAAA;;AAKe,SAAS;IACpB,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC;YAAI,WAAU;;8BACb,6LAAC;oBAAG,WAAU;8BAAuC;;;;;;8BAGrD,6LAAC;oBAAW,MAAK;oBAAK,OAAM;oBAAU,SAAQ;;;;;;;;;;;;;;;;;AAIxD;KAXwB","debugId":null}},
-    {"offset": {"line": 60, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/app/%28home%29/dashboard/page.tsx"],"sourcesContent":["\"use client\";\nimport { useState, useRef, useEffect } from \"react\";\nimport WidgetLedger from \"@/components/widget-ledger\";\n\nexport default function Dashboard() {\n  return (\n    <div className=\"\">\n      <WidgetLedger />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC,yIAAA,CAAA,UAAY;;;;;;;;;;AAGnB;KANwB","debugId":null}}]
-}

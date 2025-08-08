@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Documents/Fintrack%20FE/src/app/%28home%29/reports/page.tsx"],"sourcesContent":["\"use client\";\nimport EmptyState from \"@/components/custom/empty-state\";\nexport default function Report() {\n  return (\n    <div className=\"w-full px-[20px] sm:px-[40px] h-full bg-[hsl(0,0%,99%)]\">\n      <div className=\"layout\">\n        <p className=\"text-[24px] font-bold\">Reports</p>\n        \n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEe,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC;YAAI,WAAU;sBACb,cAAA,6LAAC;gBAAE,WAAU;0BAAwB;;;;;;;;;;;;;;;;AAK7C;KATwB","debugId":null}}]
-}
